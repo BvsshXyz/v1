@@ -79,8 +79,6 @@ MYIP=$(curl -sS ipv4.icanhazip.com)
 echo -e "\e[32mloading...\e[0m"
 curl -sS "ipinfo.io/org?token=7a814b6263b02c" > /root/.isp
 curl -sS "ipinfo.io/city?token=7a814b6263b02c" > /root/.city
-curl -sS "ipinfo.io/org?token=7a814b6263b02c" > /root/.info/.isp
-curl -sS "ipinfo.io/city?token=7a814b6263b02c" > /root/.info/.city
 clear
 apt install ruby -y
 gem install lolcat
