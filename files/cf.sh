@@ -3,6 +3,7 @@
 apt install jq curl -y
 rm -rf /root/xray/scdomain
 mkdir -p /root/xray
+MYIP=$(curl -sS ipv4.icanhazip.com)
 clear
 echo ""
 echo ""
@@ -14,7 +15,7 @@ SUB_DOMAIN=${sub}.premiumserver.live
 CF_ID=bayuagungriadi000@gmail.com
 CF_KEY=1fe3862ce9cdc01cfc82d1fb8556d64755842
 set -euo pipefail
-IP=$(curl -sS ifconfig.me);
+IP=$(curl -sS ipv4.icanhazip.com);
 echo "Updating DNS for ${SUB_DOMAIN}..."
 ZONE=$(curl -sLX GET "https://api.cloudflare.com/client/v4/zones?name=${DOMAIN}&status=active" \
 -H "X-Auth-Email: ${CF_ID}" \
