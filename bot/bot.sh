@@ -28,7 +28,7 @@ echo -e "${grenbo}Tutorial Creat Bot and ID Telegram${NC}"
 echo -e "${grenbo}[*] Creat Bot and Token Bot : @BotFather${NC}"
 echo -e "${grenbo}[*] Info Id Telegram : @MissRose_bot , perintah /info${NC}"
 echo -e "\033[1;36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-read -e -p "[*] Input your Bot Token : " bottoken
+read -e -p "[*] Input your Bot Token :" bottoken
 read -e -p "[*] Input Your Id Telegram :" admin
 echo -e BOT_TOKEN='"'$bottoken'"' >> /usr/bin/kyt/var.txt
 echo -e ADMIN='"'$admin'"' >> /usr/bin/kyt/var.txt
@@ -59,11 +59,11 @@ rm -rf kyt.sh
 echo "Done"
 echo "Your Data Bot"
 echo -e "==============================="
-echo "Token Bot         : $bottoken"
-echo "Admin          : $admin"
-echo "Domain        : $domain"
-echo "Pub            : $PUB"
-echo "Host           : $NS"
+echo "Token Bot         :$bottoken"
+echo "Admin          :$admin"
+echo "Domain        :$domain"
+echo "Pub            :$PUB"
+echo "Host           :$NS"
 echo -e "==============================="
 echo "Setting done"
 sleep 2
