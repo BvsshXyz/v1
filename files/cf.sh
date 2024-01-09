@@ -3,7 +3,6 @@
 apt install jq curl -y
 rm -rf /root/xray/scdomain
 mkdir -p /root/xray
-MYIP=$(curl -sS ipv4.icanhazip.com)
 clear
 echo ""
 echo ""
